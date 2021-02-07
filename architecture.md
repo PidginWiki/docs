@@ -24,7 +24,7 @@ There's definitly some amount of Pidgin English text on the internet. But, what 
 
 ### B) Data Collection 
 
-Since we can't data-mine, we are left with one of the few obvious options which is collecting/building the data we need ourselves. In clear terms, we would rely on people who speak and write Pidgin English to provide us with the data we need to build the Pidgin.Wiki model. So how are we going about that?  We need a piece of software to automate the collection of such data and assist with its cleaning. One of the best ways to do this is to make such a software a bot, [Bandolo](bandolo.md) is designated for this. 
+Since we can't data-mine, we are left with one of the few obvious options which is collecting/building the data we need ourselves. In clear terms, we would rely on people who speak and write Pidgin English to provide us with the data we need to build the Pidgin.Wiki model. So how are we going about that?  We need a piece of software to automate the collection of such data and assist with its cleaning. One of the best ways to do this is to make such a software a bot, [Bandolo](/bandolo) is designated for this. 
 
 _Apart from Bandolo's chat interface, data could also be provided directly on the curating dashboard that manages data coming in from Bandolo and perhaps other sources._
 

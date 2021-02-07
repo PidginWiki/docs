@@ -46,3 +46,5 @@ The question generator above would generate question such as :
 
 
 Difficulties rising from manually using the schema to generate quetions hint that it would be neccesary to language-annotate data passed in to the `source`. Such language annotation could designate each member of the source collection as a noun,verb, sentence, question or any other type that may be developed.
+
+Another hint is that, it may be neccesary to to use _keywords_ in the source fields, for example `use` and `using` don't really sound like exact data people want to capture they sound more like keywords that can generate questions for `uses` and `examples` like above.

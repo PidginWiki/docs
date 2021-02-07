@@ -49,4 +49,4 @@ As an open source organization we are building different tools that can help us 
 - Bandolo (A data collection and management bot)
 - Langwa ([NMT](https://en.wikipedia.org/wiki/Neural_machine_translation) Core)
 
-See [architecture](architecture.md)
+See [Architecture](architecture)
