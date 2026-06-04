@@ -10,9 +10,13 @@ export default defineConfig({
 			title: 'pidgin.wiki',
 			description:
 				'Documentation for the Pidgin Wiki project: tooling and a translation model for West African Pidgin English.',
-			logo: { src: './src/assets/mark.svg', alt: 'pidgin.wiki' },
+			logo: { src: './src/assets/icon.svg', alt: 'pidgin.wiki' },
 			favicon: '/favicon.svg',
 			customCss: ['./src/styles/custom.css'],
+			components: {
+				// Starlight's title slot is named SiteTitle; the file is our Logo.
+				SiteTitle: './src/components/Logo.astro',
+			},
 			head: [
 				{ tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
 				{ tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' } },
