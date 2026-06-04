@@ -14,7 +14,6 @@ export default defineConfig({
 			favicon: '/favicon.svg',
 			customCss: ['./src/styles/custom.css'],
 			components: {
-				// Starlight's title slot is named SiteTitle; the file is our Logo.
 				SiteTitle: './src/components/Logo.astro',
 			},
 			head: [
