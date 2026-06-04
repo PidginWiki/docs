@@ -1,0 +1,44 @@
+---
+title: Pidgin Wiki
+description: A free reference, tooling, and a translation model for West African Pidgin English.
+template: splash
+hero:
+  tagline: >-
+    A free reference for West African Pidgin English, spoken by over 100 million people
+    across Cameroon, Nigeria, Ghana, and Sierra Leone.
+  actions:
+    - text: Read the introduction
+      link: /introduction/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/PidginWiki
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What we are building
+
+<CardGrid>
+	<Card title="Pidgin.Wiki" icon="open-book">
+		A free reference presenting combined dictionary, translator, and encyclopedia
+		content in Pidgin English.
+	</Card>
+	<Card title="Bandolo" icon="comment">
+		A data collection and management bot that gathers words, meanings, and examples
+		from people who speak Pidgin.
+	</Card>
+	<Card title="Langwa" icon="seti:python">
+		The neural machine translation core: a model to translate between Pidgin and
+		English.
+	</Card>
+</CardGrid>
+
+## Why this matters
+
+With so many people speaking Pidgin English, why do computers still not understand it? The
+best translation systems fail on Pidgin, and it is still informally barred from many
+classrooms. The gap is a missing data and tooling foundation, and this project sets out to
+build it.

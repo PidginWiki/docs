@@ -1,0 +1,46 @@
+---
+import { logos } from 'virtual:starlight/user-images';
+import config from 'virtual:starlight/user-config';
+const { siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="site-title sl-flex">
+	{
+		config.logo && logos.dark && (
+			<img
+				alt={config.logo.alt}
+				src={logos.dark.src}
+				width={logos.dark.width}
+				height={logos.dark.height}
+			/>
+		)
+	}
+	<span class="wordmark" translate="no">pidgin<span class="brand-dot">.</span>wiki</span>
+</a>
+
+<style>
+	.site-title {
+		align-items: center;
+		gap: var(--sl-nav-gap);
+		font-size: var(--sl-text-h4);
+		text-decoration: none;
+		white-space: nowrap;
+		min-width: 0;
+	}
+	.wordmark {
+		font-family: 'Lora', Georgia, 'Times New Roman', serif;
+		font-weight: 600;
+		color: var(--sl-color-text);
+		overflow: hidden;
+	}
+	.brand-dot {
+		color: var(--sl-color-accent);
+	}
+	img {
+		height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
+		width: auto;
+		max-width: 100%;
+		object-fit: contain;
+		object-position: 0 50%;
+	}
+</style>
