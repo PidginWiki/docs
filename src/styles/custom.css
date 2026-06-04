@@ -1,0 +1,73 @@
+/* Pidgin Wiki docs theme: match the public site's brand while keeping
+   Starlight's readable, responsive defaults for body content. */
+
+:root {
+  /* Indigo accent (dark theme defaults) */
+  --sl-color-accent-low: #1d2553;
+  --sl-color-accent: #5566c6;
+  --sl-color-accent-high: #c6cdf2;
+
+  --sl-font: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --sl-font-system: var(--sl-font);
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #e0e3f8;
+  --sl-color-accent: #3f51b5;
+  --sl-color-accent-high: #1a2161;
+}
+
+/* Serif only on the wordmark and the page title, like the site. Section
+   headings keep Starlight's default sans so they stay readable and scale on
+   mobile. */
+.site-title {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+}
+:root[data-theme='light'] .site-title {
+  color: #202124;
+}
+.sl-markdown-content h1 {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+/* Tables: visible borders, header tint, and horizontal scroll on small
+   screens so wide tables stay readable on mobile. */
+.sl-markdown-content table {
+  display: table !important;
+  width: 100%;
+  border-collapse: collapse;
+}
+.sl-markdown-content :is(th, td) {
+  border: 1px solid var(--sl-color-gray-5);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.sl-markdown-content thead th {
+  background: var(--sl-color-gray-6);
+  color: var(--sl-color-text);
+}
+
+/* Tidy list indentation and spacing. */
+.sl-markdown-content :is(ul, ol) {
+  padding-inline-start: 1.5rem;
+}
+.sl-markdown-content li + li {
+  margin-top: 0.35rem;
+}
+.sl-markdown-content li > :is(ul, ol) {
+  margin-top: 0.35rem;
+}
+
+/* Woven kente stripe under the top bar. */
+header.header {
+  border-bottom: 2px solid transparent;
+  border-image: repeating-linear-gradient(
+    90deg,
+    #0aa84f 0 16px,
+    #ffbc11 16px 32px,
+    #f01b2f 32px 48px,
+    #1c1610 48px 56px,
+    #1473e6 56px 72px
+  ) 1;
+}
